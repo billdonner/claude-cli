@@ -153,6 +153,7 @@ func main() async throws {
 
     var request = URLRequest(url: URL(string: "https://api.anthropic.com/v1/messages")!)
     request.httpMethod = "POST"
+    request.timeoutInterval = 300  // 5 minutes — Opus can be slow on long responses
     request.setValue("application/json", forHTTPHeaderField: "content-type")
     request.setValue(apiKey, forHTTPHeaderField: "x-api-key")
     request.setValue("2023-06-01", forHTTPHeaderField: "anthropic-version")
@@ -161,7 +162,11 @@ func main() async throws {
     request.httpBody = try encoder.encode(body)
 
     // Make request
-    let (data, response) = try await URLSession.shared.data(for: request)
+    let config = URLSessionConfiguration.default
+    config.timeoutIntervalForRequest = 300
+    config.timeoutIntervalForResource = 300
+    let session = URLSession(configuration: config)
+    let (data, response) = try await session.data(for: request)
 
     guard let httpResponse = response as? HTTPURLResponse else {
         FileHandle.standardError.write(Data("Error: Invalid response\n".utf8))
