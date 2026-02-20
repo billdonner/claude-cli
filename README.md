@@ -70,24 +70,50 @@ claude-cli -m claude-haiku-4-5 "Classify this as bug or feature: user can't log 
 
 ## Related Projects
 
-This tool is part of a suite of projects monitored by [server-monitor](https://github.com/billdonner/server-monitor):
+All projects in the ecosystem, organized by hub:
 
-| Project | Repo | Description | Port |
-|---------|------|-------------|------|
-| **server-monitor** | [billdonner/server-monitor](https://github.com/billdonner/server-monitor) | Terminal + web dashboard for monitoring servers | 9860 |
-| **server-monitor-ios** | [billdonner/server-monitor-ios](https://github.com/billdonner/server-monitor-ios) | iOS/WidgetKit companion app for server-monitor | — |
-| **nagzerver** | [billdonner/nagzerver](https://github.com/billdonner/nagzerver) | Python API server for the Nagz ecosystem | 9800 |
-| **nagz-web** | [billdonner/nagz-web](https://github.com/billdonner/nagz-web) | TypeScript/React web app for Nagz | 5173 |
-| **nagz-ios** | [billdonner/nagz-ios](https://github.com/billdonner/nagz-ios) | SwiftUI iOS app for Nagz | — |
-| **alities-engine** | [billdonner/alities-engine](https://github.com/billdonner/alities-engine) | Swift daemon for the Alities game engine | 9847 |
-| **alities-mobile** | [billdonner/alities-mobile](https://github.com/billdonner/alities-mobile) | SwiftUI iOS app for Alities | — |
-| **obo-server** | [billdonner/obo-server](https://github.com/billdonner/obo-server) | Python/FastAPI server for OBO flashcard decks | 9810 |
-| **obo-gen** | [billdonner/obo-gen](https://github.com/billdonner/obo-gen) | Swift CLI generator — writes decks to Postgres | — |
-| **obo** | [billdonner/obo](https://github.com/billdonner/obo) | OBO ecosystem hub (docs/planning) | — |
-| **obo-ios** | [billdonner/obo-ios](https://github.com/billdonner/obo-ios) | SwiftUI iOS flashcard app | — |
-| **monitor** | [billdonner/monitor](https://github.com/billdonner/monitor) | Server Monitor ecosystem hub (docs/planning) | — |
-| **alities-trivwalk** | [billdonner/alities-trivwalk](https://github.com/billdonner/alities-trivwalk) | Python TrivWalk trivia game | — |
-| **claude-cli** | [billdonner/claude-cli](https://github.com/billdonner/claude-cli) | This tool — Swift CLI for the Claude API | — |
+### Nagz — AI-mediated nagging/reminder app
+
+| Repo | Description | Port |
+|------|-------------|------|
+| [nagz](https://github.com/billdonner/nagz) | Hub — specs, docs, orchestration | — |
+| [nagzerver](https://github.com/billdonner/nagzerver) | Python API server | 9800 |
+| [nagz-web](https://github.com/billdonner/nagz-web) | TypeScript/React web app | 5173 |
+| [nagz-ios](https://github.com/billdonner/nagz-ios) | SwiftUI iOS app | — |
+
+### OBO — Flashcard learning app
+
+| Repo | Description | Port |
+|------|-------------|------|
+| [obo](https://github.com/billdonner/obo) | Hub — specs, docs, orchestration | — |
+| [obo-server](https://github.com/billdonner/obo-server) | Python/FastAPI deck API | 9810 |
+| [obo-gen](https://github.com/billdonner/obo-gen) | Swift CLI deck generator | — |
+| [obo-ios](https://github.com/billdonner/obo-ios) | SwiftUI iOS flashcard app | — |
+
+### Alities — Trivia game platform
+
+| Repo | Description | Port |
+|------|-------------|------|
+| [alities](https://github.com/billdonner/alities) | Hub — specs, docs, orchestration | — |
+| [alities-engine](https://github.com/billdonner/alities-engine) | Swift trivia engine daemon | 9847 |
+| [alities-studio](https://github.com/billdonner/alities-studio) | React/TypeScript game designer | 9850 |
+| [alities-mobile](https://github.com/billdonner/alities-mobile) | SwiftUI iOS game player | — |
+| [alities-trivwalk](https://github.com/billdonner/alities-trivwalk) | Python TrivWalk trivia game | — |
+
+### Server Monitor — Multi-frontend server dashboard
+
+| Repo | Description | Port |
+|------|-------------|------|
+| [monitor](https://github.com/billdonner/monitor) | Hub — specs, docs, orchestration | — |
+| [server-monitor](https://github.com/billdonner/server-monitor) | Python web dashboard + Terminal TUI | 9860 |
+| [server-monitor-ios](https://github.com/billdonner/server-monitor-ios) | SwiftUI iOS + WidgetKit companion | — |
+
+### Standalone tools
+
+| Repo | Description |
+|------|-------------|
+| [claude-cli](https://github.com/billdonner/claude-cli) | This tool — Swift CLI for the Claude API |
+| [Flyz](https://github.com/billdonner/Flyz) | Fly.io deployment configs for all servers |
 
 ## License
 
