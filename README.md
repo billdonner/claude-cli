@@ -83,7 +83,10 @@ This tool is part of a suite of projects monitored by [server-monitor](https://g
 | **alities-mobile** | [billdonner/alities-mobile](https://github.com/billdonner/alities-mobile) | SwiftUI iOS app for Alities | — |
 | **obo-server** | [billdonner/obo-server](https://github.com/billdonner/obo-server) | Python/FastAPI server for OBO flashcard decks | 9810 |
 | **obo-gen** | [billdonner/obo-gen](https://github.com/billdonner/obo-gen) | Swift CLI generator — writes decks to Postgres | — |
-| **obo** | [billdonner/obo](https://github.com/billdonner/obo) | SwiftUI iOS flashcard app | — |
+| **obo** | [billdonner/obo](https://github.com/billdonner/obo) | OBO ecosystem hub (docs/planning) | — |
+| **obo-ios** | [billdonner/obo-ios](https://github.com/billdonner/obo-ios) | SwiftUI iOS flashcard app | — |
+| **monitor** | [billdonner/monitor](https://github.com/billdonner/monitor) | Server Monitor ecosystem hub (docs/planning) | — |
+| **alities-trivwalk** | [billdonner/alities-trivwalk](https://github.com/billdonner/alities-trivwalk) | Python TrivWalk trivia game | — |
 | **claude-cli** | [billdonner/claude-cli](https://github.com/billdonner/claude-cli) | This tool — Swift CLI for the Claude API | — |
 
 ## License
